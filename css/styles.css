@@ -1,16 +1,17 @@
-:root {
+/*:root {
     --brand-color: #212121;
     --secondary-color: #2196F3; 
     --anim-speed:250ms
-}
+}*/
 
-body{
+/*body{
     font-family: "Roboto", sans-serif; 
     color:  #757575;
     }
+*/
 
-    /*----reset-atart*/
-
+  /*----reset-atart*/
+ /* 
 h1,
 h2,
 h3,
@@ -44,11 +45,13 @@ img{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+} 
+*/
+
 
 /*-----Header---*/
 
-.header__container{
+/*.header__container{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
@@ -88,7 +91,8 @@ img{
 .header__logo{
     margin-right: 93px;
 }
-
+*/
+/*
 .logo {
     font-family: 'Raleway';
     font-size: 26px;
@@ -101,7 +105,8 @@ img{
 .logo--black {
     color: #000000;
 }
-
+*/
+/*
 .nav{
     margin-right: auto;
 }
@@ -151,11 +156,11 @@ img{
 .nav__link:hover{
     color: var(--secondary-color);
 }
-
+*/
 
 /*------Hero------*/
 
-.hero {
+/*.hero {
     max-width: 1600px;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
@@ -213,10 +218,10 @@ img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-
+*/
 
 /*-------modal-window------*/
-
+/*
 .backdrop{
     position:fixed;
     top: 0;
@@ -424,10 +429,10 @@ img{
     user-select: none;
 }
 
- 
+ */
 
 /*-------advantage---------*/
-
+/*
 .advantages{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -467,9 +472,9 @@ img{
     border-radius: 4px;
 }
 
-
+*/
 /*-------About work----------*/
-
+/*
 .about-work{
     padding-bottom: 94px;
 }
@@ -513,10 +518,10 @@ img{
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+*/
 
 /*-------Work team----------*/
-
+/*
 .work-team {
     background: #F5F4FA;
     padding-top: 94px;
@@ -599,10 +604,10 @@ img{
     color: #FFFFFF;
 }
 
-
+*/
 
 /*-------Clients---------*/
-
+/*
 .clients-area__title{
     margin-bottom: 50px;
     font-size: 36px;
@@ -660,7 +665,7 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+*/
 /*-------Footer----------*/
 
 .footer{
