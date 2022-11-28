@@ -22,13 +22,15 @@
     align-items: center;
     gap: 10px;
     transition-duration: var(--anim-speed);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: var(--secondary-color);
+    }
 }
 
-.header__contacts:focus,
-.header__contacts:hover {
-    color: var(--secondary-color);
-}
+
 
 .header__phone,
 .header__email {

@@ -30,12 +30,14 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--anim-speed);
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-color);
+    }
 }
 
-.modal__btn:hover,
-.modal__btn:focus{
-   fill: var(--secondary-color);
-}
+
 
 .modal-form-group{
     margin-bottom: 20px;
@@ -73,11 +75,13 @@
     padding-right: 42px;
     outline: 1px solid transparent;
     transition: outline var(--anim-speed), box-shadow;
+
+    &:focus {
+        outline-color: var(--secondary-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
 }
-.modal-form-field:focus{
-    outline-color: var(--secondary-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+
 
 .modal-form-icon{
     position: absolute;
@@ -108,12 +112,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: fill var(--anim-speed);
+
+    &:focus {
+        outline-color: var(--secondary-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
 }
 
-.modal-form-message:focus{
-    outline-color: var(--secondary-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
 .modal-form-btn{
     font-family: 'Roboto';
@@ -136,12 +141,14 @@
     margin-top: 30px;
     padding: 10px 52px;
     transition: background var(--anim-speed);
+
+    &:hover,
+    &:focus {
+        background: #188CE8;
+    }
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus{
-    background:#188CE8;
-}
+
 
 .modal-form-agreement{
     display: flex;
@@ -172,15 +179,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 0;
-    transition: background-size var(--anim-speed), background-color var(--anim-speed), border-color var(--anim-speed) ;
+    transition: background-size var(--anim-speed), background-color var(--anim-speed), border-color var(--anim-speed);
+
+    &:checked {
+        background-color: var(--secondary-color);
+        border-color: #2196F3;
+        background-image:
+            url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+        background-size: 11px 8px;
+        }
 }
-.modal-form-checkbox:checked{
-    background-color: var(--secondary-color);
-    border-color: #2196F3;
-    background-image: 
-    url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-    background-size: 11px 8px;
-}
+
 .modal-form-agreement-disc{
     user-select: none;
 }

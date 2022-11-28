@@ -137,6 +137,11 @@
     position: relative;
     transition-duration: var(--anim-speed);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }
 
 .form__icon {
@@ -144,7 +149,3 @@
     margin-left: 10px;
 }
 
-.form__btn:hover,
-.form__btn:focus {
-    background-color: #188CE8;
-}
