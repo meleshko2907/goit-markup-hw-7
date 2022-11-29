@@ -24,6 +24,11 @@
     transition-duration: var(--anim-speed);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    .clients-area__link:focus &,
+    .clients-area__link:hover & {
+        fill: var(--secondary-color);
+    }
+
 }
 
 .clients-area__link {
@@ -36,19 +41,13 @@
     border-radius: 4px;
     transition-duration: var(--anim-speed);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-.clients-area__link:hover,
-.clients-area__link:focus {
+    &:hover,
+    &:focus {
     border: 1px solid #2196F3;
     border-radius: 4px;
     fill: var(--secondary-color);
-}
-
-.clients-area__link:focus .clients-area__logo,
-.clients-area__link:hover .clients-area__logo {
-    fill: var(--secondary-color);
+    }
 }
 
 .clients-area {
