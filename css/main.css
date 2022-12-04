@@ -577,6 +577,11 @@ img {
 .about-work {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .about-work {
+    display: none;
+  }
+}
 
 .about-work__photos {
   display: -webkit-box;
