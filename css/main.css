@@ -629,8 +629,14 @@ img {
 
 .work-team {
   background: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .work-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work-team__card {
@@ -641,22 +647,42 @@ img {
 }
 
 .work-team__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work-team__title {
+    font-size: 36px;
+    line-height: 1.18;
+    margin-bottom: 50px;
+  }
 }
 
 .work-team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+
+.work-team__photo {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .work-team__photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-team__photo {
+    width: 270px;
+  }
 }
 
 .work-team__name {
@@ -678,7 +704,12 @@ img {
 
 .work-team__information {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .work-team__information {
+    padding-bottom: 30px;
+  }
 }
 
 .work-team__contacts {

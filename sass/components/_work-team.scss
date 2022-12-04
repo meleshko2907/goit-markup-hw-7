@@ -1,7 +1,13 @@
 .work-team {
     background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .work-team__card {
@@ -11,20 +17,36 @@
 }
 
 .work-team__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and(min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.18;
+        margin-bottom: 50px;
+    }    
 }
 
 .work-team__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
+.work-team__photo{
+    width: 450px;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 270px;
+    }
+}
 
 .work-team__name {
     font-weight: 500;
@@ -46,7 +68,11 @@
 
 .work-team__information {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .work-team__contacts {
