@@ -7,12 +7,12 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
     transition: var(--anim-speed) linear, visibility var(--anim-speed) linear;
-    &__is-hidden {
+        &__is-hidden {
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
         }
-    &__is-hidden .modal {
+        &__is-hidden .modal {
         opacity: 0;
         transform: translateX(-50%) translateY(-70%);
     }
